@@ -12,10 +12,25 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    var memes: [Meme]!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // test data
+        
+        let meme1 = Meme(topText: "toptext", bottomText: "bottomtext", imageName: "art_institute_500")
+        let meme2 = Meme(topText: "toptext", bottomText: "bottomtext", imageName: "art_institute_500")
+        
+        memes = [Meme]()
+        
+        let object = UIApplication.shared.delegate
+        let appDelegate = object as! AppDelegate
+        appDelegate.memes.append(meme1)
+        appDelegate.memes.append(meme2)
+
+
+        
         return true
     }
 
