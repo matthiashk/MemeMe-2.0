@@ -13,8 +13,6 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     
-    
-    
 
     
 
@@ -34,7 +32,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         // Set the name and image
         cell.textLabel?.text = meme.topText
-        //cell.imageView?.image = UIImage(named: villain.imageName)
+        cell.imageView?.image = UIImage(named: meme.imageName)
         
         
         
@@ -46,6 +44,10 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         //let detailController = self.storyboard!.instantiateViewController(withIdentifier: "VillainDetailViewController") as! VillainDetailViewController
         //detailController.villain = self.allVillains[(indexPath as NSIndexPath).row]
         //self.navigationController!.pushViewController(detailController, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100.0;
     }
 
 }
