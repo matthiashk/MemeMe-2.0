@@ -37,13 +37,16 @@ class SecondViewController: UICollectionViewController {
         
         // Set the name and image
         cell.nameLabel.text = meme.topText
-        cell.memeImageView?.image = UIImage(named: meme.imageName)
+        cell.memeImageView?.image = meme.memedImage
         
         return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // TODO
+        let detailController = self.storyboard!.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        detailController.meme = appDelegate.memes[(indexPath as NSIndexPath).row]
+        self.navigationController!.pushViewController(detailController, animated: true)
+
     }
 
 }

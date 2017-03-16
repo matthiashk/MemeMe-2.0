@@ -265,8 +265,35 @@
             </objects>
             <point key="canvasLocation" x="2609" y="33"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="bnb-2l-3pL">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="uXU-Em-DpE" customClass="DetailViewController" customModule="MemeMe2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="utL-Jo-XQX"/>
+                        <viewControllerLayoutGuide type="bottom" id="UZC-gl-whH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3o5-Sd-uza">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hhr-B5-iKv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="hhr-B5-iKv" id="LEd-mZ-xMa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QXX-gT-xKw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2608.8000000000002" y="757.87106446776613"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vC0-cn-vlb"/>
+        <segue reference="xCG-7b-TzK"/>
     </inferredMetricsTieBreakers>
 </document>

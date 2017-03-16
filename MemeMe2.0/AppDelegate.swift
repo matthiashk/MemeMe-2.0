@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // test data
         
-        let meme1 = Meme(topText: "toptext", bottomText: "bottomtext", imageName: "art_institute_500")
-        let meme2 = Meme(topText: "toptext", bottomText: "bottomtext", imageName: "art_institute_500")
+        let meme1 = Meme(topText: "toptext", bottomText: "bottomtext", originalImage: UIImage(named: "art_institute_500")!, memedImage: UIImage(named: "art_institute_500")!)
+        let meme2 = Meme(topText: "toptext", bottomText: "bottomtext", originalImage: UIImage(named: "art_institute_500")!, memedImage: UIImage(named: "art_institute_500")!)
         
         memes = [Meme]()
         

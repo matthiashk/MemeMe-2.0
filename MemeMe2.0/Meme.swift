@@ -12,12 +12,16 @@ struct Meme {
     
     let topText: String
     let bottomText: String
-    let imageName: String
+    let originalImage: UIImage
+    let memedImage: UIImage
     
-    init(topText: String, bottomText: String, imageName: String) {
+    
+    init(topText: String, bottomText: String, originalImage: UIImage, memedImage: UIImage ) {
+        
         self.topText = topText
         self.bottomText = bottomText
-        self.imageName = imageName
+        self.originalImage = originalImage
+        self.memedImage = memedImage
     }
     
     
